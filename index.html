@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Momentum App</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<section id="container">
+			<span></span>
+		</section>
+		<section>
+			<form id="login-form" class="hidden">
+				<input
+					required
+					maxlength="20"
+					type="text"
+					placeholder="What is your name?"
+				/>
+				<input type="submit" value="Log In" />
+			</form>
+			<h1 class="hidden" id="greeting"></h1>
+			<h2 id="clock">00:00:00</h2>
+			<form id="todo">
+				<input
+					id="todo-input"
+					type="text"
+					placeholder="+ New To Do"
+					autocomplete="off"
+					autofocus
+				/>
+			</form>
+			<ul class="todo-list"></ul>
+			<div id="quote">
+				<span></span>
+				<span></span>
+			</div>
+			<div id="weather">
+				<span></span>
+				<span></span>
+			</div>
+		</section>
+		<!-- <div class="img"></div> -->
+		<script defer src="js/background.js"></script>
+		<script defer src="js/login.js"></script>
+		<script defer src="js/greeting.js"></script>
+		<script defer src="js/clock.js"></script>
+		<script defer src="js/quote.js"></script>
+		<script defer src="js/weather.js"></script>
+		<script defer src="js/todo.js"></script>
+	</body>
+</html>
